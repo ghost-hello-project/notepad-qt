@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file alias="logo_16">res/logo/logo_16x16.png</file>
+        <file alias="logo_32">res/logo/logo_32x32.png</file>
+        <file alias="logo_128">res/logo/logo_128x128.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file alias="new_16">res/icon/icon_new_16x16.png</file>
+    </qresource>
+</RCC>

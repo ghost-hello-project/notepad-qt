@@ -2,6 +2,8 @@
 #include <spdlog/spdlog.h>
 
 #include <QApplication>
+#include <QIcon>
+#include <QStyleFactory>
 #include <QSysInfo>
 #include <cstdlib>
 
@@ -18,7 +20,11 @@ int main(int argc, char *argv[]) {
     SPDLOG_LOGGER_DEBUG(log, fmt::format("janna is running..."));
 
     QApplication a(argc, argv);
-    MainWindow   w;
+#ifdef Q_OS_WIN
+    a.setWindowIcon(QIcon(":/logo/logo_32"));
+#endif
+
+    MainWindow w;
     w.show();
 
     auto result = QApplication::exec();

@@ -8,6 +8,7 @@ qt_add_executable(${PROJECT_NAME}
     MANUAL_FINALIZATION
     ${APP_SOURCES}
     ${QRC_FILES}
+    ${PROJECT_SOURCE_DIR}/icon.rc
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE

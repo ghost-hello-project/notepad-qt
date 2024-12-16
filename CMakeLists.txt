@@ -45,6 +45,7 @@ add_compile_options(-DJANNA_LOG_LEVEL=1)
 # 项目配置文件
 configure_file(janna_configuration.h.in ${PROJECT_SOURCE_DIR}/include/janna/util/configuration.h)
 set(QRC_FILES ${PROJECT_SOURCE_DIR}/res.qrc)
+set(ICON_FILES ${PROJECT_SOURCE_DIR}/icon.rc)
 
 # 生成 compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

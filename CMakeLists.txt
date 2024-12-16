@@ -42,6 +42,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 add_compile_options(-DSPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_DEBUG)
 add_compile_options(-DJANNA_LOG_LEVEL=1)
 
+# 是否在主屏幕显示
+add_compile_options(-DSHOW_WINDOW_IN_PRIMARY_SCREEN=1)
+
 # 项目配置文件
 configure_file(janna_configuration.h.in ${PROJECT_SOURCE_DIR}/include/janna/util/configuration.h)
 set(QRC_FILES ${PROJECT_SOURCE_DIR}/res.qrc)

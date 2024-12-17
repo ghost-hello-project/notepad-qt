@@ -78,10 +78,10 @@
             "label": "run-test-common",
             "type": "shell",
             "windows": {
-                "command": "cd build/windows-release/dist/test && ./qt-hello_test testCommon",
+                "command": "cd build/windows-release/dist/test && ./notepad-qt_test testCommon",
             },
             "linux": {
-                "command": "cd build/linux-release/dist/test && ./qt-hello_test testCommon",
+                "command": "cd build/linux-release/dist/test && ./notepad-qt_test testCommon",
             },
             "dependsOn": [
                 "build-release"

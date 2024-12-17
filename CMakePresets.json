@@ -14,7 +14,8 @@
             "cacheVariables": {
                 "CMAKE_PREFIX_PATH": "D:/program/qt/6.5.3/mingw_64",
                 "CMAKE_CXX_COMPILER": "D:/program/qt/Tools/mingw1120_64/bin/g++.exe",
-                "CMAKE_CXX_FLAGS": "-Wall -Wextra"
+                "CMAKE_CXX_FLAGS": "-Wall -Wextra",
+                "WINDEPLOYQT6_EXEC_PATH": "D:/program/qt/6.5.3/mingw_64/bin/windeployqt6.exe"
             }
         },
         {

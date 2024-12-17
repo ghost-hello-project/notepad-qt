@@ -53,11 +53,45 @@ private:
     QAction *act_edit_sort{nullptr};
     QAction *act_edit_perferences{nullptr};
 
-    QMenu *m_view{nullptr};
-    QMenu *m_search{nullptr};
-    QMenu *m_tool{nullptr};
-    QMenu *m_doc{nullptr};
-    QMenu *m_help{nullptr};
+    QMenu   *m_view{nullptr};
+    QAction *act_view_toolbar{nullptr};
+    QAction *act_view_menubar{nullptr};
+    QAction *act_view_statusbar{nullptr};
+    QAction *act_view_sidebar{nullptr};
+    QAction *act_view_bottom_panel{nullptr};
+    QAction *act_view_minimap{nullptr};
+    QAction *act_view_full_screen{nullptr};
+    QAction *act_view_word_wrap{nullptr};
+    QAction *act_view_font_zoom_in{nullptr};
+    QAction *act_view_font_zoom_out{nullptr};
+    QAction *act_view_font_zoom_default{nullptr};
+    QAction *act_view_merge_line{nullptr};
+    QAction *act_view_language_highlight{nullptr};
+
+    QMenu   *m_search{nullptr};
+    QAction *act_search_find{nullptr};
+    QAction *act_search_find_next{nullptr};
+    QAction *act_search_find_prev{nullptr};
+    QAction *act_search_replace{nullptr};
+    QAction *act_search_goto_line{nullptr};
+
+    QMenu   *m_tool{nullptr};
+    QAction *act_tool_spell_checker{nullptr};
+    QAction *act_tool_auto_spell_checker{nullptr};
+    QAction *act_tool_setting_language{nullptr};
+    QAction *act_tool_statistics{nullptr};
+
+    QMenu   *m_doc{nullptr};
+    QAction *act_doc_save_all{nullptr};
+    QAction *act_doc_close_all{nullptr};
+    QAction *act_doc_prev{nullptr};
+    QAction *act_doc_next{nullptr};
+    QAction *act_doc_move_to_new_window{nullptr};
+
+    QMenu   *m_help{nullptr};
+    QAction *act_help_content{nullptr};
+    QAction *act_help_keys{nullptr};
+    QAction *act_help_about{nullptr};
 
 private:
     void init();

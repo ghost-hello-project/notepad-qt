@@ -6,5 +6,26 @@
     </qresource>
     <qresource prefix="/icon">
         <file alias="new_16">res/icon/icon_new_16x16.png</file>
+        <file alias="open_16">res/icon/icon_open_16x16.png</file>
+        <file alias="save_16">res/icon/icon_save_16x16.png</file>
+        <file alias="save_as_16">res/icon/icon_save_as_16x16.png</file>
+        <file alias="close_16">res/icon/icon_close_16x16.png</file>
+        <file alias="exit_16">res/icon/icon_exit_16x16.png</file>
+
+        <file alias="undo_16">res/icon/icon_undo_16x16.png</file>
+        <file alias="redo_16">res/icon/icon_redo_16x16.png</file>
+        <file alias="cut_16">res/icon/icon_cut_16x16.png</file>
+        <file alias="copy_16">res/icon/icon_copy_16x16.png</file>
+        <file alias="paste_16">res/icon/icon_paste_16x16.png</file>
+        <file alias="perferences_16">res/icon/icon_perferences_16x16.png</file>
+
+        <file alias="find_16">res/icon/icon_find_16x16.png</file>
+        <file alias="replace_16">res/icon/icon_replace_16x16.png</file>
+
+        <file alias="spell_checker_16">res/icon/icon_spell_checker_16x16.png</file>
+
+        <file alias="help_16">res/icon/icon_help_16x16.png</file>
+        <file alias="key_16">res/icon/icon_key_16x16.png</file>
+        <file alias="about_16">res/icon/icon_about_16x16.png</file>
     </qresource>
 </RCC>

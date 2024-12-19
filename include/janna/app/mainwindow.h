@@ -113,5 +113,53 @@ public Q_SLOTS:
     void on_act_file_print_triggered();
     void on_act_file_close_triggered();
     void on_act_file_exit_triggered();
+
+    void on_act_edit_undo_triggered();
+    void on_act_edit_redo_triggered();
+    void on_act_edit_cut_triggered();
+    void on_act_edit_copy_triggered();
+    void on_act_edit_paste_triggered();
+    void on_act_edit_delete_triggered();
+    void on_act_edit_select_all_triggered();
+    void on_act_edit_toggle_comment_line_triggered();
+    void on_act_edit_toggle_comment_block_triggered();
+    void on_act_edit_insert_date_time_triggered();
+    void on_act_edit_sort_triggered();
+    void on_act_edit_perferences_triggered();
+
+    void on_act_view_toolbar_triggered(bool checked);
+    void on_act_view_menubar_triggered(bool checked);
+    void on_act_view_statusbar_triggered(bool checked);
+    void on_act_view_sidebar_triggered(bool checked);
+    void on_act_view_bottom_panel_triggered(bool checked);
+    void on_act_view_minimap_triggered(bool checked);
+    void on_act_view_full_screen_triggered(bool checked);
+    void on_act_view_word_wrap_triggered(bool checked);
+    void on_act_view_font_zoom_in_triggered();
+    void on_act_view_font_zoom_out_triggered();
+    void on_act_view_font_zoom_default_triggered();
+    void on_act_view_merge_line_triggered();
+    void on_act_view_language_highlight_triggered();
+
+    void on_act_search_find_triggered();
+    void on_act_search_find_next_triggered();
+    void on_act_search_find_prev_triggered();
+    void on_act_search_replace_triggered();
+    void on_act_search_goto_line_triggered();
+
+    void on_act_tool_spell_checker_triggered();
+    void on_act_tool_auto_spell_checker_triggered(bool checked);
+    void on_act_tool_setting_language_triggered();
+    void on_act_tool_statistics_triggered();
+
+    void on_act_doc_save_all_triggered();
+    void on_act_doc_close_all_triggered();
+    void on_act_doc_prev_triggered();
+    void on_act_doc_next_triggered();
+    void on_act_doc_move_to_new_window_triggered();
+
+    void on_act_help_content_triggered();
+    void on_act_help_keys_triggered();
+    void on_act_help_about_triggered();
 };
 };  // namespace janna

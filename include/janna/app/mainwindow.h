@@ -1,5 +1,6 @@
 #pragma once
 #include <qaction.h>
+#include <qmainwindow.h>
 #include <qmenu.h>
 #include <qmenubar.h>
 #include <qtmetamacros.h>
@@ -10,6 +11,7 @@
 #include <QMainWindow>
 #include <QMenu>
 #include <QMenuBar>
+#include <QToolBar>
 
 namespace janna {
 class MainWindow : public QMainWindow {
@@ -26,6 +28,8 @@ private:
     std::shared_ptr<spdlog::logger> log;
 
 private:
+    QToolBar *m_toolbar{nullptr};
+
     QMenuBar *m_menubar{nullptr};
 
     QMenu   *m_file{nullptr};
@@ -102,6 +106,7 @@ private:
     void init_menu_tool();
     void init_menu_doc();
     void init_menu_help();
+    void init_toolbar();
 
 public Q_SLOTS:
     void on_act_file_new_triggered();

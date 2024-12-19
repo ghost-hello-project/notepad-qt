@@ -2,6 +2,7 @@
 
 #include <qaction.h>
 #include <qkeysequence.h>
+#include <qmainwindow.h>
 #include <qmenu.h>
 #include <qmenubar.h>
 #include <qobjectdefs.h>
@@ -39,6 +40,7 @@ void MainWindow::init() {
     init_menu_tool();
     init_menu_doc();
     init_menu_help();
+    init_toolbar();
 }
 
 void MainWindow::init_menu_file() {
@@ -527,4 +529,23 @@ void MainWindow::on_act_help_about_triggered() {
     SPDLOG_LOGGER_DEBUG(log, fmt::format("act_help_about"));
 }
 
+void MainWindow::init_toolbar() {
+    m_toolbar = new QToolBar();
+    m_toolbar->setMovable(false);
+    addToolBar(m_toolbar);
+    m_toolbar->addAction(act_file_new);
+    m_toolbar->addAction(act_file_open);
+    m_toolbar->addAction(act_file_save);
+    m_toolbar->addAction(act_file_save_as);
+    m_toolbar->addSeparator();
+    m_toolbar->addAction(act_edit_undo);
+    m_toolbar->addAction(act_edit_redo);
+    m_toolbar->addSeparator();
+    m_toolbar->addAction(act_edit_cut);
+    m_toolbar->addAction(act_edit_copy);
+    m_toolbar->addAction(act_edit_paste);
+    m_toolbar->addSeparator();
+    m_toolbar->addAction(act_search_find);
+    m_toolbar->addAction(act_search_replace);
+}
 }  // namespace janna
